@@ -35,6 +35,7 @@
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
+
   }
 
   .section-title::after {
@@ -189,23 +190,31 @@
   }
 
   .about-image {
-    flex: 1;
-    text-align: right;
-    opacity: 0;
-    transform: translateX(20px);
-    animation: fadeInRight 1s forwards;
-  }
+  text-align: center;
+}
 
-  .profile-img {
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
+.profile-img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
 
-  .profile-img:hover {
-    transform: scale(1.05);
-  }
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 40px;
+  margin: 0 5px;
+}
 
   .social-links {
   display: flex;
@@ -410,7 +419,7 @@
   /* Resume Section */
   .resume {
     padding: 100px 0;
-    background-color: #ffff;
+    background-color: #787070;
   }
 
   .resume-wrapper {
@@ -474,7 +483,7 @@
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">But, how can I help you?</a></li>
-          <li><a href="#video" class="nav-link">Video</a></li>
+          <li><a href="#video" class="nav-link">Raw-hul</a></li>
           <li><a href="#testimonials" class="nav-link">peercheck?</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
@@ -515,12 +524,12 @@
           <img src="/Users/rahulkm/Downloads/my face (1).jpg" alt="Your Name" class="profile-img">
           <div class="social-links">
             <a href="https://www.linkedin.com/in/rahulxkm/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-linkedin"></i>
+              <img src="/Users/rahulkm/Downloads/linkedinlogo.png" alt="LinkedIn" class="social-icon"> <!-- Added custom LinkedIn icon -->
             </a>
-            <a href="https://twitter.com/rahulxkm" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-twitter"></i>
+            <a href="https://x.com/rahulxkm" target="_blank" rel="noopener noreferrer">
+              <img src="/Users/rahulkm/Downloads/twitter-new-2023-x-logo-white-background-vector/xlogo.jpg" alt="Twitter" class="social-icon"> <!-- Added custom Twitter icon -->
             </a>
-          </div>
+          </div> <!-- Added social links container -->
         </div>
       </div>
     </div>
@@ -556,13 +565,12 @@
 
   <section class="video" id="video">
     <div class="container">
-      <h2 class="section-title">Video Showcase</h2>
+      <h2 class="section-title">Raw-hul</h2>
       <div class="video-wrapper">
-        <iframe src="https://www.loom.com/embed/a3f58a403c68426b9135242bc2bb2978" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://www.loom.com/embed/d9fd8f0f836e45a99098a4cd457f83e2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-    </div>
+    </div> 
   </section>
-
   <section class="testimonials" id="testimonials">
     <div class="container">
       <h2 class="section-title">peercheck?</h2>
@@ -575,10 +583,10 @@
           </div>
         </div>
         <div class="testimonial-card">
-          <p class="testimonial-text">"[Your Name] is not only a skilled developer but also a great collaborator. They seamlessly integrated with our team and delivered high-quality code on time."</p>
+          <p class="testimonial-text">"I had a really good time working with Rahul, he has that ownership mentality and executed tasks very well. It was only me and Rahul in the Marketing team initially, he is a quick learner, learnt SEO and No Code Dev in no-time."</p>
           <div class="testimonial-author">
-            <img src="jane-smith.jpg" alt="Jane Smith" class="testimonial-image">
-            <p>Jane Smith, CTO of Company Y</p>
+            <img src="/Users/rahulkm/Downloads/Ujjwal.jpeg" alt="Ujjwal Kumar" class="testimonial-image">
+            <p>Ujjwal Kumar, SEO Head : Mesha, Ex: vidyo.ai</p>
           </div>
         </div>
       </div>
@@ -714,4 +722,4 @@ document.addEventListener('DOMContentLoaded', function() {
  
   </script>
 </body>
-</html>
+</html> 
